@@ -1,0 +1,33 @@
+[user]
+	name = Abi Raja
+	email = abimanyuraja@gmail.com
+
+[alias]
+    ci = commit -a
+    co = checkout
+    st = status
+    lg = log --name-status
+    lol = log --pretty=oneline --abbrev-commit --graph --decorate
+    praise = blame
+    unadd = reset HEAD
+
+[apply]
+  whitespace = strip
+
+[diff]
+  renames = copy
+
+[rebase]
+  stat = true
+
+[color]
+  branch = true
+  diff = true
+  interactive = true
+  status = true
+  ui = auto
+  whitespace = red reverse
+
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
