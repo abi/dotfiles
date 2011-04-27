@@ -1,2 +1,6 @@
-ln -s `pwd`/.bashrc ~/.bashrc
-ln -s `pwd`/.gitconfig ~/.gitconfig
+for dotfile in .bashrc .gitconfig
+do
+  echo $dotfile
+  ln -s `pwd`/$dotfile ~/$dotfile
+done
+
