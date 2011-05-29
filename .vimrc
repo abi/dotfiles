@@ -67,7 +67,8 @@ Bundle 'mattn/zencoding-vim'
 
 " TODO: Figure out how to install color schemes into .vim/colors rather than
 " .vim/bundle
-Bundle 'gigamo/sunburst.vim'
+Bundle 'gigamo/sunburst.vim', {'rtp' : '.vim/colors'}
+" set rtp+=~/.vim/bundle/vundle/
 
 " vim-scripts repos
 Bundle 'L9'
