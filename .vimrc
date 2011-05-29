@@ -57,13 +57,17 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'altercation/vim-colors-solarized'
+" Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-surround'
 Bundle 'mattn/gist-vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'mattn/zencoding-vim'
+
+" TODO: Figure out how to install color schemes into .vim/colors rather than
+" .vim/bundle
+Bundle 'gigamo/sunburst.vim'
 
 " vim-scripts repos
 Bundle 'L9'
@@ -76,7 +80,7 @@ Bundle 'git://git.wincent.com/command-t.git'
 
 filetype plugin indent on     " required!
 
-" solarized
+" Color scheme
 syntax enable
-set background=light
-colorscheme solarized
+set background=dark
+colorscheme sunburst
