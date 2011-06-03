@@ -2,6 +2,7 @@ set nocompatible
 set autoindent
 set smartindent
 set shiftwidth=4
+set expandtab
 set tabstop=4
 set incsearch
 set number
@@ -40,6 +41,10 @@ imap jj <Esc>
 
 " Obscure file extension support
 au BufNewFile,BufRead *.flex set filetype=cpp
+" TODO: Find better syntax highlighters for sass too.
+au BufNewFile,BufRead *.vintage set filetype=html
+au BufNewFile,BufRead *.sass set filetype=css
+au BufNewFile,BufRead *.coffee set filetype=rb
 
 " Vundle stuff
 
