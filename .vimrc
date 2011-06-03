@@ -37,7 +37,7 @@ endif
 map <TAB> gt
 map <S-TAB> gT
 " I don't like <Esc>; it's also tiny on the Air
-imap jj <Esc>
+imap hh <Esc>
 
 " Obscure file extension support
 au BufNewFile,BufRead *.flex set filetype=cpp
