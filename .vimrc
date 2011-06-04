@@ -46,10 +46,9 @@ let g:CommandTAcceptSelectionTabMap='<S-CR>'
 
 " Obscure file extension support
 au BufNewFile,BufRead *.flex set filetype=cpp
-" TODO: Find better syntax highlighters for sass too.
+au BufNewFile,BufRead *.coffee set filetype=coffee
+au BufNewFile,BufRead *.sass set filetype=sass
 au BufNewFile,BufRead *.vintage set filetype=html
-au BufNewFile,BufRead *.sass set filetype=css
-au BufNewFile,BufRead *.coffee set filetype=rb
 
 " Vundle stuff
 
@@ -70,10 +69,14 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-surround'
 Bundle 'mattn/gist-vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'mattn/zencoding-vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'ervandew/supertab'
+Bundle 'Raimondi/delimitMate'
 
 " TODO: Figure out how to install color schemes into .vim/colors rather than
 " .vim/bundle
@@ -85,6 +88,7 @@ Bundle 'gigamo/sunburst.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'rails.vim'
+Bundle 'sessionman.vim'
 
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
