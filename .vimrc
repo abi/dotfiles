@@ -7,7 +7,7 @@ set tabstop=4
 set incsearch
 set number
 set mouse=ai
-set wildignore=*.o,*.obj,*.bak,*.exe
+set wildignore=*.o,*.obj,*.bak,*.exe,*.png,*.jpg,*.ico,*.pyc
 set ignorecase
 set smartcase
 
