@@ -19,7 +19,6 @@ set directory=~/.vim/tmp
 " Turn off annoying error bells
 set noerrorbells
 set visualbell
-set t_vb=
 
 " Fix some common typos
 :command WQ wq
@@ -36,13 +35,16 @@ endif
 " Key mappings
 map <TAB> gt
 map <S-TAB> gT
+map ; :
 " I don't like <Esc>; it's also tiny on the Air
 imap hh <Esc>
 
 " Command-T key mappings
-let g:CommandTAcceptSelectionVSplitMap='<CR>'
-let g:CommandTAcceptSelectionMap='<C-CR>'
-let g:CommandTAcceptSelectionTabMap='<S-CR>'
+let g:CommandTMatchWindowAtTop=1
+let g:CommandTAcceptSelectionTabMap='<CR>'
+let g:CommandTAcceptSelectionMap='<S-o>'
+let g:CommandTAcceptSelectionVSplitMap='<S-v>'
+let g:CommandTAcceptSelectionSplitMap='<S-h>'
 
 " Obscure file extension support
 au BufNewFile,BufRead *.flex set filetype=cpp
@@ -100,3 +102,6 @@ filetype plugin indent on     " required!
 syntax enable
 set background=dark
 colorscheme sunburst
+
+" Reload .vimrc whenever the .vimrc buffer is saved in vim
+autocmd! bufwritepost .vimrc source %
