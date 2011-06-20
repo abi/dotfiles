@@ -65,6 +65,8 @@ Bundle 'mattn/gist-vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'mattn/zencoding-vim'
 
+" TODO: Markdown syntax highlighting
+
 " TODO: Figure out how to install color schemes into .vim/colors rather than
 " .vim/bundle
 Bundle 'gigamo/sunburst.vim'
