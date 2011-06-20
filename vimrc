@@ -81,6 +81,8 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'ervandew/supertab'
 Bundle 'Raimondi/delimitMate'
 
+" TODO: Markdown syntax highlighting
+
 " TODO: Figure out how to install color schemes into .vim/colors rather than
 " .vim/bundle
 Bundle 'gigamo/sunburst.vim'

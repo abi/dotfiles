@@ -1,7 +1,7 @@
-for dotfile in .bashrc .gitconfig .vimrc .irbrc
+for dotfile in bashrc gitconfig vimrc irbrc
 do
   echo $dotfile
-  ln -s `pwd`/$dotfile ~/$dotfile
+  ln -s `pwd`/$dotfile ~/.$dotfile
 done
 
 #Vim backup dirs setup
@@ -21,5 +21,5 @@ pip install termcolor==1.1.0
 #apt-get install vim-ruby
 
 #Vim Vundle setup
-#git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 #:BundleInstall
