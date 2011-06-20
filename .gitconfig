@@ -6,6 +6,7 @@
     editor = /usr/bin/vim
 [alias]
     c = commit
+    b = branch
     a = add
     p = push
     pu = pull

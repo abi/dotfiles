@@ -45,6 +45,7 @@ let g:CommandTAcceptSelectionTabMap='<CR>'
 let g:CommandTAcceptSelectionMap='<S-o>'
 let g:CommandTAcceptSelectionVSplitMap='<S-v>'
 let g:CommandTAcceptSelectionSplitMap='<S-h>'
+let g:CommandTMaxHeight='10'
 
 " Obscure file extension support
 au BufNewFile,BufRead *.flex set filetype=cpp
