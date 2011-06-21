@@ -3,6 +3,7 @@ alias ub="ssh -p 2222 ubuntu@localhost"
 alias cl="ssh ubuntu@ec2-50-18-33-85.us-west-1.compute.amazonaws.com"
 alias py=python
 alias rb=ruby
+alias ka="killall"
 alias s=ssh
 alias l="ls -al"
 alias v="vim -p"
