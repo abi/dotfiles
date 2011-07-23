@@ -80,6 +80,7 @@ Bundle 'mattn/zencoding-vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'ervandew/supertab'
 Bundle 'Raimondi/delimitMate'
+Bundle 'vim-scripts/VimClojure'
 
 " TODO: Markdown syntax highlighting
 
