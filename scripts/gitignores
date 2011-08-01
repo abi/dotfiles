@@ -1,0 +1,6 @@
+if [ $1 ]
+then
+    open "https://raw.github.com/github/gitignore/master/$1.gitignore"
+else
+    open "https://github.com/github/gitignore"
+fi
