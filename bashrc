@@ -9,3 +9,13 @@ alias s=sudo
 alias l="ls -al"
 alias v="vim -p"
 alias c="cd"
+alias r="clear"
+
+alias ter="ssh bubbli@192.168.1.217"
+
+#MAN why is this so non-standard?
+export PATH=/Users/abi/stuff/srcs/go/bin:$PATH
+export GOROOT=/Users/abi/stuff/srcs/go
+
+####SCRIPTS_DIR####
+export PATH=/Users/abi/stuff/dotfiles/scripts:$PATH

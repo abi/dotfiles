@@ -1,0 +1,6 @@
+SCRIPTS_DIR=~/stuff/dotfiles/scripts
+FILE=$SCRIPTS_DIR/$1
+
+touch $FILE
+chmod a+x $FILE
+vim $FILE
