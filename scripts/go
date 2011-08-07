@@ -1,0 +1,13 @@
+if [ $1 ]
+then
+    filename=`echo $1 | cut -f 1 -d .`
+    6g $1 && 6l $filename.6 && mv 6.out $filename && ./$filename
+else
+    # Do something else
+    echo 'Starting the Go REPL for you'
+    # goinstall igo
+    # Comment out the two lines
+    # Install deps
+    # and run igo
+    ~/stuff/dotfiles/scripts/igo/igo
+fi

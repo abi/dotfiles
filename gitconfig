@@ -12,6 +12,7 @@
     pu = pull
     ci = commit -a
     co = checkout
+    cl = clone
     st = status
     lg = log --name-status
     lol = log --pretty=oneline --abbrev-commit --graph --decorate

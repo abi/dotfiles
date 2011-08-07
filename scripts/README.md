@@ -20,6 +20,8 @@ TODO
 
 * Figure out a good way to automatically generate man pages or -h options for all these scripts
 * Use #! for Ruby scripts
+* Have a template for options, help, version (and general good CLI practice) for different languages.
+* Something that clones Git repos and puts it locally.
 
 Scripts wanted
 ---------------

@@ -10,6 +10,7 @@ alias l="ls -al"
 alias v="vim -p"
 alias c="cd"
 alias r="clear"
+alias die="sudo kill -9"
 
 alias ter="ssh bubbli@192.168.1.217"
 

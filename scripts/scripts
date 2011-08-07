@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Takes you to the scripts directory, expects to be run in the same process as the shell itself so it can change the CWD.
+
+echo "Make sure you're running this within the same process as BASH"
+
+# Check that the parent of this process is not a bash shell? Is that the best way to figure if we're actually running as a child process or not?
+cd ~/stuff/dotfiles/scripts

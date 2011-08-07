@@ -1,0 +1,2 @@
+wget "$1" /tmp/spiderman-script
+cat /tmp/spiderman-script
