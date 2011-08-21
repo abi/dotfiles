@@ -15,9 +15,17 @@ Help with writing scripts
 Advanced Bash Scripting Guide
 http://www.tldp.org/LDP/abs/html/testconstructs.html
 
+Support
+-------
+
+All modern machines can have Python and Bash installed. Assume that you can always get the Bash shell even if it is not the default login shell.
+
 TODO
 ====
 
+
+* Use Google protbuf to bridge between libraries that only exist in some languages (do non-server IPC)
+* Good way to generate columnar output, etc. with tables and such
 * Figure out a good way to automatically generate man pages or -h options for all these scripts
 * Use #! for Ruby scripts
 * Have a template for options, help, version (and general good CLI practice) for different languages.

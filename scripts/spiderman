@@ -1,2 +1,5 @@
+#!/usr/bin/env bash
+# What is spiderman?
+
 wget "$1" /tmp/spiderman-script
 cat /tmp/spiderman-script

@@ -1,0 +1,6 @@
+#!/bin/sh
+# Clones a new source project from a Git URL into your srcs dir
+
+SRCS_DIR=~/stuff/srcs
+#TODO: Extract the basename and clone into $SRCS_DIR/$BASENAME
+#git clone $1 $SRCS_DIR

@@ -1,5 +1,10 @@
 Just a bunch of dotfiles.
 
+NOTE
+====
+
+This repo is being phased out in favor of Wanderlust.
+
 Usage
 -----
 

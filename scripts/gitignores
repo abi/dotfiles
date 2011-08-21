@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+# Locates the appropriate default gitignore for your specified language from Github's repos
+
 if [ $1 ]
 then
     open "https://raw.github.com/github/gitignore/master/$1.gitignore"

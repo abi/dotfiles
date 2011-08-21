@@ -1,6 +1,22 @@
+#!/usr/bin/env bash
+# Creates "a new" script 
+
+# TODO: This should be merged with wanderlust
+# TODO: Read SCRIPTS_DIR from the python program that lists the directories important to scripts
+# TODO: Get $EDITOR
+EDITOR=vim
 SCRIPTS_DIR=~/stuff/dotfiles/scripts
-FILE=$SCRIPTS_DIR/$1
+FILE_NAME=$1
+FILE=$SCRIPTS_DIR/$FILE_NAME
+
+if [[ -e $FILE ]]
+then
+    echo "A script with the name $FILE_NAME already exists"
+    exit 1
+fi
 
 touch $FILE
+echo '#!/usr/bin/env PROGRAM' >> $FILE
+echo '# FILL IN WITH A DESCRIPTION OF YOUR SCRIPT ' >> $FILE
 chmod a+x $FILE
-vim $FILE
+$EDITOR $FILE

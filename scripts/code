@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Opens the source code of the project matching the argument in your favorite editor
+# TODO: Fix this crap
+
+EDITOR=mate
+SOURCES_DIR=~/stuff/srcs
+
+blah="ls"
+$blah ~/stuff | grep dot
+exit 0
+
+search="ls $SOURCES_DIR | grep -i $1"
+echo Executing $search
+#`$search`
+
+NUM_PROJECTS="$search | wc -l"
+echo $NUM_PROJECTS
+$NUM_PROJECTS
+exit 0
+
+if (( $NUM_PROJECTS > 2 )); then
+    `$search`
+fi
+
+PROJECT_NAME=`ls ~/stuff/srcs | grep -i $1 | head -1`
+echo $PROJECT_NAME
+#$EDITOR $SOURCES_DIR/$PROJECT_NAME

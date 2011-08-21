@@ -1,0 +1,63 @@
+#!/usr/bin/env python
+# -*- coding: latin-1 -*-
+# Wanderlust is the CLI interface to all of wanderlust
+
+import os
+from os import path as op
+from termcolor import cprint
+
+# __file__
+
+def error(msg):
+    cprint(msg, 'red')
+    exit()
+
+try:
+    f = open(os.path.expanduser('~/.wanderrc'), 'r')
+except IOError:
+    error('You don\' seem to have a wanderrc')
+
+lineno = 0
+WANDER_DIR = None
+
+COMMENT_CHARS = ['#', '//', '/*']
+
+for line in f:
+    lineno += 1
+    try:
+        (option, value) = line.split('=', 1)
+    except ValueError:
+        error('You have a syntax error at line ' + lineno + '\n:  ' + line)
+    
+    if option == 'WANDER_DIR':
+        WANDER_DIR = value.strip()
+        break
+
+SCRIPTS_DIR = op.join(WANDER_DIR, 'scripts')
+for filename in os.listdir(SCRIPTS_DIR):
+    filepath = op.join(SCRIPTS_DIR, filename)
+    
+    # Ignore list in the scripts dir
+    if op.isdir(filepath) or filename.endswith('.md') or filename.endswith('.go') or filename == 'DEPS':
+        continue
+    
+    f = open(filepath, 'r')
+    
+    # Ignore the first line because that's usually '#!/usr/bin/env
+    f.readline()
+    desc = f.readline()
+    
+    # Special Python files such as this current one where we want to use UTF-8 encoding and need to specify that
+    # to the interpretator as the second line of the file
+    if desc.startswith('# -*-'):
+        desc = f.readline()
+        
+    isComment = False
+    for c in COMMENT_CHARS:
+        desc = desc.strip()
+        if desc.startswith(c):
+            isComment = True
+            desc = desc.split('#')[1].strip()
+    
+    print op.basename(filepath), ' — ', (desc if isComment else ' No description found. (the second line should be )')
+    

@@ -1,1 +1,4 @@
+#!/usr/bin/env bash
+# Takes you to your sources directory.
+
 cd ~/stuff/srcs
