@@ -28,6 +28,9 @@
 [rebase]
   stat = true
 
+[merge]
+  ff = false
+
 [color]
   branch = true
   diff = true
