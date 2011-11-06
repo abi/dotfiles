@@ -14,6 +14,9 @@ alias rmr='rm -r'
 
 alias stuff="cd ~/stuff"
 alias sc='cd ~/Documents/school/fall-11:12'
+alias blog="cd ~/stuff/abi.github.com"
+alias lab="cd ~/stuff/lab"
 
 alias ter="ssh bubbli@192.168.1.217"
 alias cl="ssh ubuntu@ec2-50-18-33-85.us-west-1.compute.amazonaws.com"
+

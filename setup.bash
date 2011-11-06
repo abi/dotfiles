@@ -1,4 +1,4 @@
-for dotfile in bashrc gitconfig vimrc irbrc bash_aliases
+for dotfile in bashrc gitconfig vimrc irbrc bash_aliases emacs emacs-code
 do
   echo $dotfile
   ln -s `pwd`/$dotfile ~/.$dotfile
