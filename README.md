@@ -20,6 +20,10 @@ Then in Vim (do `sudo vim` to start it),
 
 `:BundleInstall` to install all your plugins.
 
+And on a Mac, you have to create a `.bash_profile` file that has:
+
+`source ~/.bashrc`
+
 
 Acknowledgements
 ----------------
@@ -30,7 +34,7 @@ Acknowledgements
 TODO
 ----
 
-* bash_profile?
+* bash_profile? For macs
 * A bashrc that's specific to various machines?
-* Sunburst
+* Sunburst (fix the color scheme downloading on VIM)
 * Ubuntu's default nice bashrc
