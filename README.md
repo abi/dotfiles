@@ -8,11 +8,15 @@ This repo is being phased out in favor of Wanderlust.
 Usage
 -----
 
-`sudo bash install.bash`
+First, `sudo easy_install-2.7 pip` to install pip.
+
+Then,
+
+`sudo bash setup.bash`
 
 If some dotfiles already exist, those specific symlinks will fail to be created. Resolve your existing dotfiles and then, run the script again.
 
-Then in Vim,
+Then in Vim (do `sudo vim` to start it),
 
 `:BundleInstall` to install all your plugins.
 
